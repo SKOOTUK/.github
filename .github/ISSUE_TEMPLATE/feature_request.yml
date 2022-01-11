@@ -1,0 +1,34 @@
+name: Feature Request
+description: File a feature request
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a feature request, please search for the desired behaviour in the existing issues.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: Provide a description of this feature and the user experience.
+      placeholder: It would be good to have this feature.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: What is the use case or pain point?
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround
+      description: Is there a workaround currently?
+  - type: textarea
+    id: services
+    attributes:
+      label: Services and Components
+      description: Please list, to you best of your knowledge, which would be affected services/components by the implementation of the requested feature.
